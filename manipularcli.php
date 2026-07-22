@@ -67,5 +67,14 @@ class modificarcliente extends datospersona
         $consulta->execute();
         $conexion = null;
     }
+
+    public static function eliminar($id)
+    {
+        $conexion = new Conexion();
+        $consulta = $conexion->prepare('DELETE FROM ' . self::TABLA . ' WHERE idcli = :id');
+        $consulta->bindParam(':id', $id, PDO::PARAM_INT);
+        $consulta->execute();
+        $conexion = null;
+    }
 }
 ?>

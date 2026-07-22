@@ -149,6 +149,20 @@ textarea.form-control {
     vertical-align: middle;
 }
 
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.btn-icon i {
+    font-size: 1rem;
+}
+
 .pie {
     background: #f3f4f6;
     padding: 16px 24px;
